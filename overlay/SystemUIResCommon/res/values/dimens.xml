@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+     <!-- Normalized location on the screen of the center of the physical usb charger port in
+          portrait mode. The USB-C port is on the top edge, slightly right of center. -->
+     <item name="physical_charger_port_location_normalized_x" type="dimen" format="float">0.6</item>
+     <item name="physical_charger_port_location_normalized_y" type="dimen" format="float">0</item>
+</resources>
