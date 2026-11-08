@@ -228,8 +228,8 @@
           when adapting to brighter or darker environments.  This parameter controls how quickly
           brightness changes occur in response to an observed change in light level that exceeds the
           hysteresis threshold. -->
-     <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
-     <integer name="config_autoBrightnessDarkeningLightDebounce">3000</integer>
+     <integer name="config_autoBrightnessBrighteningLightDebounce">4000</integer>
+     <integer name="config_autoBrightnessDarkeningLightDebounce">8000</integer>
 
      <!-- Screen brightness used to dim the screen when the user activity
           timeout expires.  May be less than the minimum allowed brightness setting
@@ -291,5 +291,35 @@
 
      <!-- Allow double tap on the letterbox to move the app up or down -->
      <bool name="config_letterboxIsVerticalReachabilityEnabled">true</bool>
+
+     <!-- Ambient light hysteresis. The light sensor is noisy in the dark, where
+          AOSP's flat 10% / 20% thresholds are a fraction of a lux, so require a
+          much larger relative change at low lux before re-evaluating brightness.
+          Values are tenths of a percent; levels are lux. -->
+     <integer-array name="config_ambientThresholdLevels">
+          <item>10</item>
+          <item>50</item>
+          <item>200</item>
+          <item>1000</item>
+          <item>5000</item>
+     </integer-array>
+
+     <integer-array name="config_ambientBrighteningThresholds">
+          <item>1000</item>
+          <item>500</item>
+          <item>300</item>
+          <item>200</item>
+          <item>150</item>
+          <item>100</item>
+     </integer-array>
+
+     <integer-array name="config_ambientDarkeningThresholds">
+          <item>800</item>
+          <item>600</item>
+          <item>400</item>
+          <item>300</item>
+          <item>250</item>
+          <item>200</item>
+     </integer-array>
 
 </resources>
