@@ -106,11 +106,11 @@
           array. The brightness values must be non-negative and non-decreasing. This must be
           overridden in platform specific overlays -->
      <array name="config_autoBrightnessDisplayValuesNits">
-          <item>4.522</item>
-          <item>20.246</item>
-          <item>55.509</item>
-          <item>74.653</item>
-          <item>82.757</item>
+          <item>20</item>
+          <item>32</item>
+          <item>45</item>
+          <item>58</item>
+          <item>72</item>
           <item>93.15</item>
           <item>117.678</item>
           <item>138.666</item>
@@ -144,12 +144,16 @@
           of the brightness values array).
           Spline interpolation is used to determine the auto-brightness
           backlight values for lux levels between these control points.
-          Must be overridden in platform specific overlays -->
+          Must be overridden in platform specific overlays.
+          T812: the JSA1130 light sensor (driven by the SCP firmware) reports
+          lux in steps of 16, and reads 0 in most dim rooms, so the low end
+          starts at 16 lux and stays flat enough that 0 <-> 32 lux flicker
+          does not visibly change the brightness. -->
      <array name="config_autoBrightnessLevels">
-          <item>6</item>
-          <item>18</item>
-          <item>34</item>
-          <item>82</item>
+          <item>16</item>
+          <item>32</item>
+          <item>48</item>
+          <item>80</item>
           <item>128</item>
           <item>256</item>
           <item>384</item>
