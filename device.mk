@@ -168,6 +168,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(KERNEL_PATH)/Image.gz:kernel
 
+# The kernel enables SYSVIPC and IP6_NF_NAT for Droidspaces containers,
+# which the android12-5.10 kernel requirements of the FCM ask to be off.
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
 # Keymaster
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
