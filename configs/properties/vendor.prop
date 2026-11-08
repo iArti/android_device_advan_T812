@@ -13,6 +13,10 @@ vendor.streamout.pcm.dump=0
 vendor.streamin.pcm.dump=0
 ro.audio.usb.period_us=16000
 
+# Battery
+# The fuel gauge reports charge_full_design as 294 mAh; the pack is 6050 mAh.
+ro.vendor.battery.design_capacity_uah=6050000
+
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac
 persist.bluetooth.a2dp_offload.disabled=true
