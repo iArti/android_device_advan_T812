@@ -121,6 +121,9 @@ ro.vendor.mtk_nn_support=1
 ro.vendor.powerhal_fling_mode_support=1
 
 # PQ
+# Disable AAL content adaptive backlight: without MediaTek's MiraVision
+# settings it dims and lifts the backlight with the screen content.
+persist.vendor.sys.mtkaal.function=0
 ro.vendor.mtk_pq_color_mode=1
 ro.vendor.mtk_pq_support=2
 ro.vendor.pq.disp_lcm_name_support=0
