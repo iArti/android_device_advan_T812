@@ -286,4 +286,10 @@
      <!-- Whether per-app fullscreen override option is allowed in user aspect ratio settings -->
      <bool name="config_appCompatUserAppAspectRatioFullscreenIsEnabled">true</bool>
 
+     <!-- Center letterboxed apps vertically instead of pinning them to the top -->
+     <item name="config_letterboxVerticalPositionMultiplier" format="float" type="dimen">0.5</item>
+
+     <!-- Allow double tap on the letterbox to move the app up or down -->
+     <bool name="config_letterboxIsVerticalReachabilityEnabled">true</bool>
+
 </resources>
