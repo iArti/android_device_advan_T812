@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Desktop windowing app header height. AOSP uses 40dp (48dp with tall
+         app headers), which takes a large part of a small window on this
+         8.4" screen. The header buttons are shrunk in SystemUIResCommon. -->
+    <dimen name="desktop_view_default_header_height">32dp</dimen>
+    <dimen name="desktop_view_default_large_header_height">32dp</dimen>
+</resources>
