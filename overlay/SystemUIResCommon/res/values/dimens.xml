@@ -8,4 +8,25 @@
           portrait mode. The USB-C port is on the top edge, slightly right of center. -->
      <item name="physical_charger_port_location_normalized_x" type="dimen" format="float">0.65</item>
      <item name="physical_charger_port_location_normalized_y" type="dimen" format="float">0</item>
+     <!-- Desktop windowing app header buttons, sized for the 32dp header set in
+          FrameworksResCommon (AOSP: 40dp, 48dp with tall app headers). -->
+     <dimen name="desktop_mode_header_window_control_button_width">36dp</dimen>
+     <dimen name="desktop_mode_header_window_control_button_height">32dp</dimen>
+     <dimen name="desktop_mode_header_window_control_button_padding_horizontal">9dp</dimen>
+     <dimen name="desktop_mode_header_window_control_button_padding_vertical">5dp</dimen>
+     <dimen name="desktop_mode_header_window_control_button_width_large">36dp</dimen>
+     <dimen name="desktop_mode_header_window_control_button_height_large">32dp</dimen>
+     <dimen name="desktop_mode_header_window_control_button_padding_large">6dp</dimen>
+     <dimen name="desktop_mode_header_app_chip_ripple_inset_vertical">2dp</dimen>
+     <dimen name="desktop_mode_header_app_chip_ripple_inset_vertical_large">2dp</dimen>
+     <dimen name="desktop_mode_header_minimize_ripple_inset_vertical">2dp</dimen>
+     <dimen name="desktop_mode_header_minimize_ripple_inset_large">2dp</dimen>
+     <dimen name="desktop_mode_header_maximize_ripple_inset_vertical">2dp</dimen>
+     <dimen name="desktop_mode_header_maximize_ripple_inset_large">2dp</dimen>
+     <dimen name="desktop_mode_header_close_ripple_inset_vertical">2dp</dimen>
+     <dimen name="desktop_mode_header_close_ripple_inset_large">2dp</dimen>
+     <dimen name="desktop_mode_header_buttons_ripple_radius">14dp</dimen>
+     <dimen name="desktop_mode_header_minimize_ripple_radius">14dp</dimen>
+     <dimen name="desktop_mode_header_maximize_ripple_radius">14dp</dimen>
+     <dimen name="desktop_mode_header_close_ripple_radius">14dp</dimen>
 </resources>
